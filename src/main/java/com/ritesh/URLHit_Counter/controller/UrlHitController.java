@@ -14,7 +14,7 @@ public class UrlHitController {
     UrlHitService urlHitService;
 
     @RequestMapping(value = "/user/{userName}" , method = RequestMethod.GET)
-    public User UrlHit(@PathVariable String userName){
+    public String UrlHit(@PathVariable String userName){
         return urlHitService.CountHit(userName);
     }
 }
